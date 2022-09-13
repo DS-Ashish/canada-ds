@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from 'next/script'
+import Head from "next/head";
+import Image from "next/image";
+import Script from "next/script";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination,Autoplay,FreeMode } from "swiper";
+import { Pagination, Autoplay, FreeMode } from "swiper";
 
 export default function Home() {
   const addJsonLd = () => {
@@ -29,14 +29,14 @@ export default function Home() {
             name: "Jane Doe",
             telephone: "(425) 123-4567",
             url: "http://www.janedoe.com"
-      `
-    }
-  }
+      `,
+    };
+  };
   return (
-   <>
-   <Head>
-   <title>
-          Microsoft Dynamics 365 Partner UK, London | Dynamics Square
+    <>
+      <Head>
+        <title>
+          Microsoft Dynamics 365 Partner UK, London | Dynamics Squares
         </title>
         <meta
           name="description"
@@ -60,14 +60,8 @@ export default function Home() {
         <meta property="og:url" content="https://www.dynamicssquare.co.uk/" />
         <meta property="og:site_name" content="Dynamics Square" />
         <meta property="fb:app_id" content="2007906422699147" />
-        <meta
-          property="og:image"
-          content="/img/Microsoft Partner black.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="/img/five-500.png"
-        />
+        <meta property="og:image" content="/img/Microsoft Partner black.png" />
+        <meta property="og:image:secure_url" content="/img/five-500.png" />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
         <meta property="og:image:alt" content="DS Favicon" />
@@ -83,10 +77,7 @@ export default function Home() {
         />
         <meta name="twitter:site" content="@dsquare_uk" />
         <meta name="twitter:creator" content="@dsquare_uk" />
-        <meta
-          name="twitter:image"
-          content="/img/five-500.png"
-        />
+        <meta name="twitter:image" content="/img/five-500.png" />
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content="admin" />
         <meta name="twitter:label2" content="Time to read" />
@@ -94,32 +85,33 @@ export default function Home() {
         <meta name="google-site-verification" content="UA-76870474-2" />
         <meta name="msvalidate.01" content="EE56DA95B952D734B4521A0EFA1F0E8B" />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                "@context": "http://schema.org",
-                "@type": "Person",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Seattle",
-                  addressRegion: "WA",
-                  postalCode: "98052",
-                  streetAddress: "20341 Whitworth Institute 405 N. Whitworth"
-                },
-                colleague: [
-                  "http://www.xyz.edu/students/alicejones.html",
-                  "http://www.xyz.edu/students/bobsmith.html"
-                ],
-                email: "mailto:jane-doe@xyz.edu",
-                image: "janedoe.jpg",
-                jobTitle: "Professor",
-                name: "Jane Doe",
-                telephone: "(425) 123-4567",
-                url: "http://www.janedoe.com"
-              })
-           }}
-      />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Person",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Seattle",
+                addressRegion: "WA",
+                postalCode: "98052",
+                streetAddress: "20341 Whitworth Institute 405 N. Whitworth",
+              },
+              colleague: [
+                "http://www.xyz.edu/students/alicejones.html",
+                "http://www.xyz.edu/students/bobsmith.html",
+              ],
+              email: "mailto:jane-doe@xyz.edu",
+              image: "janedoe.jpg",
+              jobTitle: "Professor",
+              name: "Jane Doe",
+              telephone: "(425) 123-4567",
+              url: "http://www.janedoe.com",
+            }),
+          }}
+        />
       </Head>
-   <section id="hero" className="hero hero-1">
+      <section id="hero" className="hero hero-1">
         <div className="container">
           <div className="row">
             <div className="col-lg-6  align-self-center">
@@ -140,7 +132,7 @@ export default function Home() {
                     <span>Talk to an Expert </span>
                   </a>
                 </div>
-                
+
                 <div className="bnner_inline_images">
                   <ul>
                     <li>
@@ -177,10 +169,7 @@ export default function Home() {
                   <li>
                     <div className="list-n-wrp">
                       <a href="/products/microsoft-azure/">
-                        <img
-                          src="/img/azur-icons.svg"
-                          alt="azur-icons"
-                        />
+                        <img src="/img/azur-icons.svg" alt="azur-icons" />
                         <span>Azure</span>
                       </a>
                     </div>
@@ -204,10 +193,7 @@ export default function Home() {
                   <li>
                     <div className="list-n-wrp">
                       <a href="/products/microsoft-dynamics-365-finance/">
-                        <img
-                          src="/img/finace-icons.svg"
-                          alt="finace-icons"
-                        />
+                        <img src="/img/finace-icons.svg" alt="finace-icons" />
                         <span>Finance</span>
                       </a>
                     </div>
@@ -271,10 +257,7 @@ export default function Home() {
                   <li>
                     <div className="list-n-wrp">
                       <a href="/products/microsoft-power-bi/">
-                        <img
-                          src="/img/powerbilogo.png"
-                          alt="powerbilogo"
-                        />
+                        <img src="/img/powerbilogo.png" alt="powerbilogo" />
                         <span>Power BI</span>
                       </a>
                     </div>
@@ -749,9 +732,8 @@ export default function Home() {
                   </div>
                   <div className="cintent-right cintent-right-001">
                     <p>
-                      Our experienced{" "}
-                      <a href="/">Dynamics 365 consultants</a> can
-                      diagnose your system to identify your actual system
+                      Our experienced <a href="/">Dynamics 365 consultants</a>{" "}
+                      can diagnose your system to identify your actual system
                       upgrading needs and suggest you the best possible solution
                       suited to your customized business needs.
                     </p>
@@ -941,10 +923,7 @@ export default function Home() {
                               alt=""
                             />
                             <div className="imginner">
-                              <img
-                                src="/img/Icon metro-quote.png"
-                                alt=""
-                              />
+                              <img src="/img/Icon metro-quote.png" alt="" />
                             </div>
                             <p>
                               We selected them because their communication is
@@ -971,10 +950,7 @@ export default function Home() {
                               alt="Spectra-Aluminum-logo-new"
                             />
                             <div className="imginner">
-                              <img
-                                src="/img/Icon metro-quote.png"
-                                alt=""
-                              />
+                              <img src="/img/Icon metro-quote.png" alt="" />
                             </div>
                             <p>
                               The team at Dynamics Square are very dedicated,
@@ -1014,7 +990,6 @@ export default function Home() {
                     </SwiperSlide>
                   </Swiper>
                 </div>
-               
               </div>
             </div>
             <div className="col-lg-6 align-self-center">
@@ -1030,7 +1005,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section id="clients" className="clients">
         <div className="container" data-aos="fade-up">
@@ -1186,7 +1161,7 @@ export default function Home() {
                         Implemented Custom EFT Module to improvise Payment
                         Methods
                       </p>
-                     
+
                       <div className="case-button">
                         <a
                           href="/case-studies/spectra/"
@@ -1210,7 +1185,7 @@ export default function Home() {
                         Implementation of Microsoft Dynamics Business Central
                         Cloud
                       </p>
-                     
+
                       <div className="case-button">
                         <a
                           href="/case-studies/shimco/"
@@ -1226,7 +1201,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> 
-   </>
-  )
+      </section>
+    </>
+  );
 }
